@@ -4,6 +4,8 @@ Hi there! This is _or is supposed to be_ a web app to manage information about t
 
 This is a project for the university hehe
 
+This repo will be private soon tho
+
 ---
 
 ## Credits
