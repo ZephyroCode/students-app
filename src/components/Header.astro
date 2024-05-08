@@ -1,0 +1,32 @@
+---
+import UserIcon from '@icons/User.astro'
+---
+
+<header
+  class='flex justify-between items-center bg-slate-900 text-white py-2 px-1'
+>
+  <div class='flex justify-center items-center gap-x-2'>
+    <UserIcon class='size-10' />
+    <h1 class='text-lg'>Administración de la U.E. "El Encanto"</h1>
+  </div>
+  <div class='flex justify-center items-center gap-x-6'>
+    <nav class='flex gap-x-2 text-sky-500'>
+      <a class='hover:text-sky-300 transition-colors' href='/students-app/'
+        >Inicio</a
+      >
+      <a
+        class='hover:text-sky-300 transition-colors'
+        href='/students-app/matricula'>Matrícula</a
+      >
+      <a class='hover:text-sky-300 transition-colors' href='/students-app/pagos'
+        >Pagos</a
+      >
+    </nav>
+    <div
+      class='flex justify-center items-center gap-x-2 hover:text-sky-300 transition-colors'
+    >
+      <span class='text-xs'>UserName</span>
+      <UserIcon />
+    </div>
+  </div>
+</header>
