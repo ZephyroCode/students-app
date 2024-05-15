@@ -1,0 +1,24 @@
+---
+import UserIcon from './icons/User.astro'
+
+interface Props {
+  title: string
+  text: string
+  href: string
+  buttonText: string
+}
+
+const { title, text, href, buttonText } = Astro.props
+---
+
+<article
+  class='bg-slate-900 py-3 px-4 rounded-lg text-white text-center flex justify-between items-center flex-col gap-4 max-w-56 min-h-48'
+>
+  <h2>{title}</h2>
+  <UserIcon class='size-40' />
+  <p>{text}</p>
+  <a
+    class='transition-colors hover:text-sky-300 bg-sky-800 hover:bg-sky-900 rounded-lg py-1 px-2 text-sm'
+    href={href}>{buttonText}</a
+  >
+</article>

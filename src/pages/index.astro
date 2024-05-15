@@ -1,12 +1,33 @@
 ---
 import Layout from '@/layouts/Layout.astro'
+
+import Card from '@/components/Card.astro'
 ---
 
 <Layout
   title='Students App'
   description='Manage and get information about the students'
 >
-  <main>
-    <h1>Holis</h1>
+  <main class='flex justify-center items-center flex-col h-screen'>
+    <section class='flex justify-center items-center gap-4'>
+      <Card
+        title='Estudiantes deudores'
+        text='Hay estudiantes los cuales no ha pagado la mensualidad. Consulte cuáles son los deudores.'
+        href='/students-app/'
+        buttonText='Ir a los deudores.'
+      />
+      <Card
+        title='Estudiantes matriculados'
+        text='Hay un total de X alumnos matriculados en la institución. Consulte la matrícula estudiantil.'
+        href='/students-app/'
+        buttonText='Ir a matrícula'
+      />
+      <Card
+        title='Pagos realizados'
+        text='Lleve un control de los pagos de mensualidad realizados. Consulte los pagos.'
+        href='/students-app/'
+        buttonText='Ir a los pagos'
+      />
+    </section>
   </main>
 </Layout>
