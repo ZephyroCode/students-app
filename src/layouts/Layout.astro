@@ -16,7 +16,7 @@ const { title, description } = Astro.props
     <meta charset='UTF-8' />
     <meta name='description' content={description} />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' href='/logo.ico' type='image/png' />
+    <link rel='icon' href='/students-app/logo.ico' type='image/png' />
     <title>{title}</title>
     <ViewTransitions />
   </head>
@@ -32,6 +32,7 @@ const { title, description } = Astro.props
 
       body {
         min-height: 100dvh;
+        width: 100%;
       }
 
       @media (prefers-reduced-motion: reduce) {
